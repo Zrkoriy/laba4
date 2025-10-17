@@ -14,10 +14,10 @@ double df(double x) {
 
 // --- Метод половинного деления ---
 Result bisection(double a, double b, double eps, int maxIter) {
-    if (a >= b) throw std::invalid_argument("a must be < b");
+    if (a >= b) throw std::invalid_argument("a должно быть < b");
     double fa = f(a);
     double fb = f(b);
-    if (fa * fb > 0) throw std::invalid_argument("f(a) and f(b) must have opposite signs");
+    if (fa * fb > 0) throw std::invalid_argument("f(a) и f(b) должны иметь противоположные знаки");
 
     Result res;
     res.iterations = 0;

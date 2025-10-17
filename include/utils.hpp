@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <iomanip>
-#include "methods.hpp"  // 🔹 добавлено — определяет IterRecord
+#include "methods.hpp"
 
 inline void print_header() {
     std::cout << std::fixed << std::setprecision(10);
